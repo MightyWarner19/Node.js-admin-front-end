@@ -16,6 +16,10 @@ import Alerts from './pages/UiElements/Alerts';
 import Buttons from './pages/UiElements/Buttons';
 import DefaultLayout from './layout/DefaultLayout';
 import Video from './pages/HomePage/Video';
+import WhyChooseUs from './pages/HomePage/WhyChooseUs';
+import KeyFeature from './pages/HomePage/KeyFeature';
+import Client from './pages/HomePage/Client';
+import Testimonial from './pages/HomePage/Testimonial';
 
 function App() {
   const [loading, setLoading] = useState<boolean>(true);
@@ -59,6 +63,51 @@ function App() {
             <>
               <PageTitle title="Video | MW-Admin" />
               <Video />
+            </>
+          }
+        />
+        <Route
+          path="/home-page/video"
+          element={
+            <>
+              <PageTitle title="Video | MW-Admin" />
+              <Video />
+            </>
+          }
+        />
+        <Route
+          path="/home-page/why-choose-us"
+          element={
+            <>
+              <PageTitle title="Why Choose Us | MW-Admin" />
+              <WhyChooseUs />
+            </>
+          }
+        />
+        <Route
+          path="/home-page/key-feature"
+          element={
+            <>
+              <PageTitle title="Key Feature | MW-Admin" />
+              <KeyFeature />
+            </>
+          }
+        />
+        <Route
+          path="/home-page/client"
+          element={
+            <>
+              <PageTitle title="Client | MW-Admin" />
+              <Client />
+            </>
+          }
+        />
+        <Route
+          path="/home-page/testimonial"
+          element={
+            <>
+              <PageTitle title="Testimonial | MW-Admin" />
+              <Testimonial />
             </>
           }
         />

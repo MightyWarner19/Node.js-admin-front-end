@@ -15,6 +15,7 @@ import Tables from './pages/Tables';
 import Alerts from './pages/UiElements/Alerts';
 import Buttons from './pages/UiElements/Buttons';
 import DefaultLayout from './layout/DefaultLayout';
+import Video from './pages/HomePage/Video';
 
 function App() {
   const [loading, setLoading] = useState<boolean>(true);
@@ -49,6 +50,15 @@ function App() {
             <>
               <PageTitle title="Dashboard | MW-Admin" />
               <ECommerce />
+            </>
+          }
+        />
+        <Route
+          path="/home-page/video"
+          element={
+            <>
+              <PageTitle title="Video | MW-Admin" />
+              <Video />
             </>
           }
         />

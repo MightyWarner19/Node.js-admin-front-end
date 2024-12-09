@@ -33,7 +33,7 @@ module.exports = {
         bodydark: '#AEB7C0',
         bodydark1: '#DEE4EE',
         bodydark2: '#8A99AF',
-        primary: '#3C50E0',
+        primary: '#3C50E0', 
         secondary: '#80CAEE',
         stroke: '#E2E8F0',
         gray: {
@@ -61,6 +61,8 @@ module.exports = {
           8: '#F0950C',
           9: '#E5E7EB',
           10: '#0FADCF',
+          11: '#F97316',
+          12: '#EA580C',
         },
         success: '#219653',
         danger: '#D34053',

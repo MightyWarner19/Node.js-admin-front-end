@@ -7,11 +7,10 @@ const DefaultLayout: React.FC<{ children: ReactNode }> = ({ children }) => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const location = useLocation();
   const { pathname } = location;
-  console.log(pathname);
 
   return (
     <>
-      {pathname === '/auth/signin' || pathname === '/auth/signup' ? (
+      {pathname === '/' || pathname === '/auth/signup' ? (
         <div className="dark:bg-boxdark-2 dark:text-bodydark">
           <div className="flex h-screen overflow-hidden">
             <div className="relative flex flex-1 flex-col overflow-y-auto overflow-x-hidden">
